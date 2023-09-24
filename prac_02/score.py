@@ -16,13 +16,12 @@ def determine_grade_status(score):
     """determine score status"""
     if score < 0 or score > 100:
         return "Invalid score"
+    elif score < 50:
+        return "bad"
+    elif score < 90:
+        return "Passable"
     else:
-        if score < 50:
-            return "bad"
-        elif score < 90:
-            return "Passable"
-        else:
-            return "Excellent"
+        return "Excellent"
 
 
 main()
