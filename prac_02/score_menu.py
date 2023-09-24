@@ -6,6 +6,7 @@ MENU = "(G)et valid score\n(P)rint result\n(S)how stars\n(Q)uit"
 
 
 def main():
+    """Get score and status"""
     print(MENU)
     choice = input("choice: ").upper()
     while choice != "Q":
@@ -23,6 +24,7 @@ def main():
 
 
 def get_valid_score():
+    """Get valid score"""
     score = int(input("Score: "))
     while score < 0 or score > 100:
         print("Invalid score")
@@ -31,6 +33,7 @@ def get_valid_score():
 
 
 def determine_score_status(score):
+    """Determine score status"""
     if score < 50:
         return "bad"
     elif score < 90:
@@ -40,6 +43,7 @@ def determine_score_status(score):
 
 
 def print_stars(score):
+    """Print stars the size of score"""
     print("*" * score)
 
 
