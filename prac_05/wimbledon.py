@@ -1,4 +1,5 @@
 def main():
+    """Process wimbledon.csv and display champions and countries"""
     filename = "wimbledon.csv"
     data = get_data(filename)
     champion_to_wins, countries = process_data(data)
@@ -6,6 +7,7 @@ def main():
 
 
 def display_results(champion_to_wins, countries):
+    """Display champions, wins and countries"""
     print("Wimbledon Champions: ")
     for champion, wins in champion_to_wins.items():
         print(champion, wins, sep=" ")
@@ -14,6 +16,7 @@ def display_results(champion_to_wins, countries):
 
 
 def process_data(data):
+    """Create champion and wins dictionary and a set of winning countries"""
     champion_to_wins = {}
     countries = set()
     for record in data:
@@ -26,6 +29,7 @@ def process_data(data):
 
 
 def get_data(filename):
+    """Open file and create nested list of data records"""
     data = []
     with open(filename, "r", encoding="utf-8-sig") as in_file:
         in_file.readline()
