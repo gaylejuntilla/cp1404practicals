@@ -1,3 +1,7 @@
+CHAMPION_INDEX = 2
+COUNTRY_INDEX = 1
+
+
 def main():
     """Process wimbledon.csv and display champions and countries"""
     filename = "wimbledon.csv"
@@ -21,10 +25,10 @@ def process_data(data):
     countries = set()
     for record in data:
         try:
-            countries.add(record[1])
-            champion_to_wins[record[2]] += 1
+            countries.add(record[COUNTRY_INDEX])
+            champion_to_wins[record[CHAMPION_INDEX]] += 1
         except KeyError:
-            champion_to_wins[record[2]] = 1
+            champion_to_wins[record[CHAMPION_INDEX]] = 1
     return champion_to_wins, countries
 
 
