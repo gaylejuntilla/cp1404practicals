@@ -18,8 +18,6 @@ while state_code != "":
     state_code = input("Enter short state: ").upper()
 
 max_state_length = max(len(state) for state in CODE_TO_NAME.keys())
-max_sate_name_length = max(len(state_name) for state_name in CODE_TO_NAME.values())
+max_state_name_length = max(len(state_name) for state_name in CODE_TO_NAME.values())
 for state, state_name in CODE_TO_NAME.items():
-    print(f"{state:{max_state_length}} is {state_name:{max_sate_name_length}}")
-
-
+    print(f"{state:{max_state_length}} is {state_name:{max_state_name_length}}")
