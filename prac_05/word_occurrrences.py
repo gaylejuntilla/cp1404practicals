@@ -19,4 +19,3 @@ ordered_words = sorted(word_to_count.keys())
 max_word_length = max(len(word) for word in words)
 for word in ordered_words:
     print(f"{word:{max_word_length}} : {word_to_count[word]}")
-
