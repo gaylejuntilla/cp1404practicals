@@ -8,6 +8,7 @@ from guitar import Guitar
 
 
 def main():
+    """Add guitars to list and display a formatted version"""
     print("My guitars!")
     name = input("Name: ")
     guitars = []
