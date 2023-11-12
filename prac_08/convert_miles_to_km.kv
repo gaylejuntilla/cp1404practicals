@@ -4,7 +4,8 @@ BoxLayout:
         orientation: 'horizontal'
         TextInput:
             id: input_number
-            text: '34'
+            multiline: False
+            on_text_validate: app.handle_update()
         BoxLayout:
             orientation: 'vertical'
             size_hint_x: 0.25
@@ -19,5 +20,5 @@ BoxLayout:
         on_press: app.calculate_conversion()
     Label:
         id: output_label
-        text: ''
+        text: app.number
         color: (0, 1, 1, 1)
