@@ -23,8 +23,11 @@ class MilesToKilometers(App):
 
     def get_miles(self):
         """ """
-        number_of_miles = float(self.root.ids.input_number.text)
-        return number_of_miles
+        try:
+            number_of_miles = float(self.root.ids.input_number.text)
+            return number_of_miles
+        except ValueError:
+            return 0.0
 
     def calculate_conversion(self):
         """ """
