@@ -25,5 +25,9 @@ class MilesToKilometers(App):
         number_of_kilometers = number_of_miles * MILES_TO_KM_RATIO
         self.root.ids.output_label.text = str(number_of_kilometers)
 
+    def handle_increment(self, increment_value):
+        number_of_miles = self.get_miles() + increment_value
+        self.root.ids.input_number.text = str(number_of_miles)
+
 
 MilesToKilometers().run()
