@@ -4,7 +4,7 @@
 
 ## Summary:
 
-Hi my name is Gayle I am a Bachelor of Science student and this is my repository which contains
+Hi I'm Gayle and I'm a Bachelor of Science student. This is my repository which contains
 my practical work of material learned in the programming subject CP1404.
 
 ## Clean Code
