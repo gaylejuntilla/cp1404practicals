@@ -5,6 +5,7 @@ MENU = "q)uit, c)hoose taxi, d)rive"
 
 
 def main():
+    """Simulate a taxi service tracker using Taxi and SilverServiceTaxi classes"""
     taxis = [Taxi(name="Prius", fuel=100), SilverServiceTaxi(name="Limo", fuel=100, fanciness=2),
              # SilverServiceTaxi class uses key word arguments
              SilverServiceTaxi(name="Hummer", fuel=200, fanciness=4)]
@@ -43,6 +44,7 @@ def main():
 
 
 def display_taxi_options(taxis):
+    """Display numbered taxis"""
     for i, taxi in enumerate(taxis):
         print(f"{i} - {taxi}")
 
